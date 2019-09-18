@@ -1,0 +1,150 @@
+li{
+  list-style-type: none;
+}
+
+.specificationBlock(@_min-height, @_bg){
+  min-height: @_min-height;
+  background: @_bg;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container{
+  display: flex;
+  flex: 0 1 960px;
+  justify-content: center;
+}
+
+
+
+header{
+  padding: 20px 0 20px 0;
+  background: aqua;
+  flex: 1 1 auto;
+  ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+}
+
+.usersAndPosts{
+  flex: 0 1 100%;
+  .specificationBlock(960px, green);
+  display: flex;
+  .users{
+    margin-right: 20px;
+    flex: 0 1 350px;
+    ul li{
+      cursor: pointer;
+    }
+  }
+}
+
+main{
+  flex: 0 1 100%;
+  .specificationBlock(960px, green);
+  position: relative;
+  .modal{
+    position: fixed;
+    .specificationBlock(150px, red);
+    top: 50px;
+    left: 50px;
+    opacity: .7;
+  }
+  div{
+    border-bottom: 1px solid black;
+  }
+  button{
+    background: red;
+    color: white;
+  }
+  .post{
+    position: relative;
+    .userModal{
+      position: absolute;
+      top: -5px;
+      left: 35%;
+      background: yellow;
+    }
+  }
+}
+
+footer{
+  .specificationBlock(150px, red);
+  flex: 1 1 auto;
+}
+
+.todo{
+  border: 1px solid bisque;
+  background: beige;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  div{
+    background: bisque;
+    padding: 5px 0 5px 0;
+    margin-bottom: 5px;
+    flex: 1 1 100%;
+  .todoItem{
+    border-bottom: 1px solid white;
+  }
+    .number{
+      box-sizing: border-box;
+      padding-right: 2px;
+      padding-left: 2px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 10px;
+    }
+    span{
+      margin-left: 10px;
+      background: darkgray;
+      border-radius: 100%;
+      color:white;
+    }
+  }
+  .true {
+    background: green;
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding: 0 5px 0 5px;
+    color:white;
+    border-radius: 10px;
+  }
+  .false {
+    background: red;
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding: 0 5px 0 5px;
+    color:white;
+    border-radius: 10px;
+  }
+  .neutral{
+    background: gray;
+    display: inline-block;
+    margin: 5px 0 0 0;
+    padding: 0 5px 0 5px;
+    color:white;
+    border-radius: 10px;
+  }
+  p{
+    padding-left: 10px;
+  }
+  .aprove{
+    background: gray;
+    color:white;
+    border-radius: 10px;
+    border:0;
+  }
+  .aprove:hover, .aprove:active{
+    outline: none;
+  }
+  .aprove:active{
+    background: green;
+  }
+}

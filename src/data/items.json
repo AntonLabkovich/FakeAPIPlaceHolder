@@ -1,0 +1,56 @@
+[
+  {
+    "id" : 1,
+    "name" : "Test 1",
+    "price" : 300,
+    "images" : [
+      "images/my1.jpg",
+      "images/my2.jpg",
+      "images/my3.jpg"
+    ],
+    "cat" : "avto"
+  },
+  {
+    "id" : 2,
+    "name" : "Test 3",
+    "price" : 1000,
+    "images" : [
+      "images/my1.jpg",
+      "images/my2.jpg",
+      "images/my3.jpg"
+    ],
+    "cat" : "sale"
+  },
+  {
+    "id" : 3,
+    "name" : "Test 2",
+    "price" : 500,
+    "images" : [
+      "images/my1.jpg",
+      "images/my2.jpg",
+      "images/my3.jpg"
+    ],
+    "cat" : "sale"
+  },
+  {
+    "id" : 4,
+    "name" : "Test 555",
+    "price" : 1500,
+    "images" : [
+      "images/my1.jpg",
+      "images/my2.jpg",
+      "images/my3.jpg"
+    ],
+    "cat" : "sale"
+  },{
+  "id" : 6,
+  "name" : "Test привет",
+  "price" : 1500,
+  "images" : [
+    "images/my1.jpg",
+    "images/my2.jpg",
+    "images/my3.jpg"
+  ],
+  "cat" : "sale"
+}
+]

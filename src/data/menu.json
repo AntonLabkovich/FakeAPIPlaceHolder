@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Главная",
+    "url" : "/dist/"
+  },
+  {
+    "name": "Пользователи",
+    "url" : "/dist/usersAndPosts"
+  },
+  {
+    "name": "Список задач",
+    "url" : "/dist/todo"
+  },
+  {
+    "name": "Контакты",
+    "url" : "/dist/contacts"
+  }
+]
